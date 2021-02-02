@@ -110,7 +110,6 @@
 			"border-image-width",
 			"border-image-outset",
 			"border-image-repeat"
-		],
-		"order/properties-alphabetical-order": true
+		]
 	}
 }
