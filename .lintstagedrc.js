@@ -3,5 +3,8 @@ module.exports = {
     "npx prettier --write",
     "eslint src/*.js --fix-dry-run"
   ],
-  "*.scss": "npx prettier --write"
+  "*.scss": [
+    "npx prettier --write",
+     "stylelint --fix --syntax=scss"
+  ]
 }
