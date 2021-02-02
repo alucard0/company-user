@@ -8,4 +8,4 @@ module.exports = {
   jsxSingleQuote: false,
   endOfLine: "lf",
   proseWrap: "preserve"
-};
+}

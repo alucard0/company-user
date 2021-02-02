@@ -7,9 +7,10 @@ module.exports = {
   },
   rules: {
     'react/jsx-filename-extension': 'off',
+    'semi': ["error", "never", { "omitLastInOneLineBlock": true}]
   },
   env: {
     "jest": true,
     "browser": true
   }
-};
+}
