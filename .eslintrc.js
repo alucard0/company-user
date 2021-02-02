@@ -6,8 +6,7 @@ module.exports = {
     "allowImportExportEverywhere": true
   },
   rules: {
-    'react/jsx-filename-extension': 'off',
-    'semi': ["error", "never", { "omitLastInOneLineBlock": true}]
+    'react/jsx-filename-extension': 'off'
   },
   env: {
     "jest": true,
