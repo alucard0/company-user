@@ -3,11 +3,17 @@ module.exports = {
   parser: "babel-eslint",
   parserOptions: {
     "sourceType": "module",
-    "allowImportExportEverywhere": true
+    "allowImportExportEverywhere": true,
+    "ecmaVersion": 6,
+    "ecmaFeatures": {
+      "jsx": true
+    }
   },
   rules: {
     "semi": "off",
-    'react/jsx-filename-extension': 'off'
+    'react/jsx-filename-extension': 'off',
+    'jsx-quotes': [2, 'prefer-double'],
+    quotes: ["error", "single"]
   },
   env: {
     "jest": true,
