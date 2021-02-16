@@ -1,41 +1,43 @@
 module.exports = {
-  extends: ["airbnb"],
-  parser: "babel-eslint",
+  extends: ['airbnb'],
+  parser: 'babel-eslint',
   parserOptions: {
-    "sourceType": "module",
-    "ecmaVersion": 6,
-    "ecmaFeatures": {
-      "jsx": true
+    sourceType: 'module',
+    allowImportExportEverywhere: true,
+    ecmaVersion: 6,
+    ecmaFeatures: {
+      jsx: true
     }
   },
   rules: {
-    "semi": "off",
-    "react/jsx-filename-extension": "off",
-    "jsx-quotes": [2, "prefer-double"],
-    quotes: ["error", "single"]
+    semi: 'off',
+    'react/jsx-filename-extension': 'off',
+    'jsx-quotes': [2, 'prefer-double'],
+    quotes: ['error', 'single'],
+    'quote-props': ['error', 'as-needed']
   },
   env: {
-    "jest": true,
-    "browser": true
+    'jest': true,
+    'browser': true
   },
   settings: {
-    "import/order": ["warn", { 
-      "groups": ["builtin", "external", "internal", "parent", "sibling"], 
-      "alphabetize": {
-        order: "asc"
+    'import/order': ['warn', { 
+      'groups': ['builtin', 'external', 'internal', 'parent', 'sibling'], 
+      'alphabetize': {
+        order: 'asc'
       },
-      "pathGroups": [
+      'pathGroups': [
         {
-          "pattern": "react",
-          "group": "builtin",
-          "position": "before"
+          'pattern': 'react',
+          'group': 'builtin',
+          'position': 'before'
         }
       ],
-      "pathGroupsExcludedImportTypes": ["builtin"]
+      'pathGroupsExcludedImportTypes': ['builtin']
     }],
-    "import/resolver": {
-      "node": {
-        "paths": ["src"]
+    'import/resolver': {
+      'node': {
+        'paths': ['src']
       }
     }
   }
