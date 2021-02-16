@@ -4,8 +4,9 @@ module.exports = {
   singleQuote: true,
   trailingComma: 'all',
   semi:false,
-  tabWisth: 2,
+  tabWidth: 2,
   jsxSingleQuote: false,
+  printWidth: 100,
   endOfLine: "lf",
   proseWrap: "preserve"
 }
