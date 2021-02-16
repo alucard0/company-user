@@ -1,9 +1,8 @@
 module.exports = {
-  extends: ['airbnb'],
+  extends: ["airbnb"],
   parser: "babel-eslint",
   parserOptions: {
     "sourceType": "module",
-    "allowImportExportEverywhere": true,
     "ecmaVersion": 6,
     "ecmaFeatures": {
       "jsx": true
@@ -11,8 +10,8 @@ module.exports = {
   },
   rules: {
     "semi": "off",
-    'react/jsx-filename-extension': 'off',
-    'jsx-quotes': [2, 'prefer-double'],
+    "react/jsx-filename-extension": "off",
+    "jsx-quotes": [2, "prefer-double"],
     quotes: ["error", "single"]
   },
   env: {
@@ -20,19 +19,24 @@ module.exports = {
     "browser": true
   },
   settings: {
-    'import/order': ['warn', { 
-      'groups': ['builtin', 'external', 'internal', 'parent', 'sibling'], 
-      'alphabetize': {
-        order: 'asc'
+    "import/order": ["warn", { 
+      "groups": ["builtin", "external", "internal", "parent", "sibling"], 
+      "alphabetize": {
+        order: "asc"
       },
       "pathGroups": [
         {
           "pattern": "react",
           "group": "builtin",
-          "position": 'before'
+          "position": "before"
         }
       ],
       "pathGroupsExcludedImportTypes": ["builtin"]
-    }]
+    }],
+    "import/resolver": {
+      "node": {
+        "paths": ["src"]
+      }
+    }
   }
 }
