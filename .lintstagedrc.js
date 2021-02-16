@@ -4,7 +4,7 @@ module.exports = {
     "eslint src/*.js --fix-dry-run"
   ],
   "*.scss": [
-    "stylelint --f --syntax=scss",
+    "stylelint --fix --syntax=scss",
     "npx prettier --write"
   ]
 }
