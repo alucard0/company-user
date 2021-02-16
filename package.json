@@ -48,7 +48,7 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "npx lint-staged --allow-empty -c ./.lintstagedrc.js"
+      "pre-commit": "npx lint-staged -c ./.lintstagedrc.js"
     }
   }
 }
